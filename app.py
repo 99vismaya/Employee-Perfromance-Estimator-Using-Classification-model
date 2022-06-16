@@ -9,9 +9,8 @@ import streamlit as st
 import numpy as np
 import pickle
 
-emp_perf_model_path1 = 'C:/Users/ADMIN/model.pkl'
-emp_perf_model1 = pickle.load(
-    open(emp_perf_model_path1, 'rb'))
+emp_perf_model_path1 = open("model.pkl","rb")
+emp_perf_model1=pickle.load(emp_perf_model_path1)
 
 def main():
     st.title('Employee Performance Rating Prediction App')
