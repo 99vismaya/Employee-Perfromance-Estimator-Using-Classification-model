@@ -15,7 +15,7 @@ emp_perf_model1=pickle.load(emp_perf_model_path1)
 def main():
     st.title('Employee Performance Rating Prediction App')
     st.markdown('Just Enter the following details and we will predict the perfermonance rating of your Employee')
-    a = st.slider("Age",0,100)
+    a = st.slider("Age",0,50)
     b = st.selectbox("Gender",('Female','Male'))
     if b == 'Female':
         b=0
