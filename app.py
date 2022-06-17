@@ -186,11 +186,11 @@ def main():
         prediction = emp_perf_model1.predict([[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]])
         prediction = int(prediction)
         if prediction == 0:
-            st.write("Employee's performance is average")
+            st.warning("Employee's performance is average")
         elif prediction==1:
-            st.write("Employee's performance is good")
+            st.success("Employee's performance is good")
         else:
-            st.write("Employee's performance is low")
+            st.error("Employee's performance is low")
 
 if __name__ == '__main__':
     main()
