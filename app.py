@@ -17,7 +17,7 @@ with open('style.css') as f:
 
 def main():
     st.title('Employee Performance Rating Prediction App')
-    st.markdown('Just Enter the following details and we will predict the perfermonance rating of your Employee')
+    st.markdown('Just Enter the following details and we will predict the performance rating of your Employee')
     a = st.slider("Age(years)",0,50)
     b = st.selectbox("Gender",('Female','Male'))
     if b == 'Female':
