@@ -1,0 +1,14 @@
+.stButton{
+    font-size: 20px;
+    text-align: center;
+}
+    
+.stAlert{
+    font-size: large;
+    text-align: center;
+}
+
+.stMarkdown{
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
