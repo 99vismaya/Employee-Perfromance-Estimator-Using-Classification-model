@@ -12,6 +12,9 @@ import pickle
 emp_perf_model_path1 = open("model.pkl","rb")
 emp_perf_model1=pickle.load(emp_perf_model_path1)
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html = True)
+
 def main():
     st.title('Employee Performance Rating Prediction App')
     st.markdown('Just Enter the following details and we will predict the perfermonance rating of your Employee')
@@ -82,7 +85,7 @@ def main():
         k=1
     else:
         k=2
-    l = st.slider("Experience",1,40)
+    l = st.slider("Experience(years)",1,40)
     m = st.slider("Training time(months)",1,6)
     n = st.selectbox("Work Life Balance",('Bad','Best','Better','Good'))
     if n == "Bad":
@@ -149,7 +152,7 @@ def main():
         v=0
     else:
         v=1
-    w = st.slider("Percent Salary Hike",1,20)
+    w = st.slider("Percent Salary Hike(%)",1,20)
     x = st.selectbox("Net Connectivity",('Good','Poor'))
     if x == 'Good':
         x=0
