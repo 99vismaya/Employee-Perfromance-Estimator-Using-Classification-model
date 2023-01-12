@@ -9,9 +9,9 @@ Data is pulled from the SQL database where employee data is stored. It has 5100 
 Target variable - Performance Rating. It is a categorical with output good, bad and neutral
 
 # Model building
-As output variable is categorical, regression models are trained and Decision tree model with 96% accuracy is selected for model building
+As output variable is categorical, regression models are trained. Decision tree, Random forest, k- Nearest Neighbour,Multilinear regression and Decision tree model with 96% accuracy is selected for model building
 
 Deployment
-Streamlit framework is used for app building. Users is allowed to input the features related to employee to predict perfromance and clicking on predict button displays perfromance of employee.
+Streamlit framework is used for app building.Streamlit cloud platform is used for cloud deployment. User is allowed to input the features related to employee to predict perfromance and clicking on predict button displays perfromance of employee.
 
-App Link:https://employee-01.herokuapp.com/
+App Link:https://99vismaya-employee-perfromance-estimator-using-class-app-v8j2z9.streamlit.app/
